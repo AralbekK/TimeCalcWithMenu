@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TimeCalculator</string>
+    <string name="textTitleApp">Калькулятор времени</string>
+    <string name="textInputTimeOne">Введите время 1</string>
+    <string name="textInputTimeTwo">Введите время 2</string>
+    <string name="textTimePlus">Вычесть</string>
+    <string name="textTimeMinus">Сложить</string>
+    <string name="textResult">Результат</string>
+</resources>
