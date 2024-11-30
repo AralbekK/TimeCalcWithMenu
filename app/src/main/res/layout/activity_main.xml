@@ -3,11 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
     <!-- Поле с названием -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#006400"
+        android:theme="@style/AppTheme"
+        app:title="@string/textTitleApp"
+        app:subtitle="тестовое приложение"
+        app:logo="@drawable/baseline_timer_24"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fitsSystemWindows="true" />
 
-    <!-- Поля ввода значения времени -->
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
@@ -23,6 +34,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Поля ввода значения времени -->
     <EditText
         android:id="@+id/timeInput1"
         android:layout_width="0dp"
@@ -59,7 +71,7 @@
         android:text="@string/textTimePlus"
         android:textSize="16sp"
         android:textColor="@android:color/black"
-        android:background="@android:color/holo_orange_light"
+        android:background="#80C000"
         app:layout_constraintTop_toBottomOf="@id/timeInput1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/addButton"
@@ -75,7 +87,7 @@
         android:text="@string/textTimeMinus"
         android:textSize="16sp"
         android:textColor="@android:color/black"
-        android:background="@android:color/holo_orange_light"
+        android:background="#80C000"
         app:layout_constraintTop_toBottomOf="@id/timeInput2"
         app:layout_constraintStart_toEndOf="@id/subtractButton"
         app:layout_constraintEnd_toEndOf="parent"
